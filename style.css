@@ -1,0 +1,274 @@
+* {
+  box-sizing: content-box;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: unset;
+  overflow: hidden;
+  color: white;
+  }
+
+  /* :root pseudo */
+  :root {
+    --primary-color: #fff;
+    --primary-padding: 0%;
+    --primary-margin: 0px;
+    --primery-background: linear-gradient(409deg, rgb(51, 70, 106) 0%, rgba(247,240,231,1) 35%, rgba(43,63,101,1) 96%) no-repeat;
+    
+}
+
+  body{
+    opacity: 0;
+    transition: opacity 5s;
+    background: var(--primery-background);
+  }
+  body > div.row > div.column.two > p {
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 62%;
+    color: white;
+  }
+  body > div.row > div.column.two > img{
+  vertical-align: middle;
+    border-style: none;
+    width: 172px;
+    border-radius: 3%;
+    position: fixed;
+    padding: 22px;
+}
+
+.column.tow{
+  background-color: #2b3f65;
+}
+
+
+div .header{
+  position: static;
+  margin: 10px;
+
+}
+
+div:nth-child(1) > img {
+  width: 27%;
+  display: inline-block;
+  float: left;
+  margin-left: 50px;
+  margin-top: 7px;
+}
+
+body > div > div > div.col-lg-6.column.two > div > p{
+  float: right;
+  padding: 13px;
+}
+
+  
+  .two{
+    background-color: #2b3f65;
+    position: relative;
+      
+  }
+
+li{
+  max-width: 66.666667%;
+}
+
+  /* Create two equal columns that floats next to each other */
+  .column {
+      height: 721px;
+      float: left;
+      width: 50%;
+      margin: 0px;
+      padding: 0%;
+      margin: 0 auto;
+      text-align: center;
+      display: inline-grid;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+   
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
+  .parallelogram {
+    width: 47%;
+    height: 264%;
+    transform: skew(25deg) translateX(-182px);
+    /* background: #3148bf; */
+    background: #0d4ca9;
+    position: absolute;
+    box-shadow: -9px 20px 11px 0px #859bc1;
+    box-shadow: inset 0 0 20px 1px #384a6b;
+    z-index: -333;
+    /* Responsive */
+    /* width 80% */
+  }
+
+  .container{
+    z-index: 100;
+  }
+
+  .left {
+    position: absolute;
+    z-index: 10;
+    font-size: x-large;
+    top: 69%;
+    color: white;
+  }
+
+ div:nth-child(2) > img {
+  width: 55%;
+    margin-top: 53px;
+    margin-right: -2px;
+  }
+  
+  body > div.row > div.column.two > form > a{
+    padding: 0%;
+    width: 187px;
+    height: 54px;
+    text-align: center;
+    line-height: 56px;
+    color: #322e32eb;
+    font-size: 21px;
+    text-transform: none;
+    text-decoration: none;
+    font-family: unset;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9fa, #d87daf, #ece2899e, #03a9f4);
+    background-size: 400%;
+    border-radius: 27px;
+    display: inline-block;
+  
+  }
+
+  body > div.row > div.column.two > p > a{
+    color: #c0abed;
+  }
+  
+  a:hover{
+    animation: animate 10s alternate infinite;
+    text-decoration: none;
+  }
+  @keyframes animate {
+    0%{
+      background-position: 0%;
+    }
+    100%{
+      background-position: 400%;
+    }
+  }
+  /* inner form */
+  a:before{
+    content: "";
+      z-index: -7;
+      background: linear-gradient(30deg, #1f3259, #7793baa8, #dadbff, #ddf4ff);
+      background-size: 355%;
+      border-radius: 81px;
+      top: 115px;
+      left: 10%;
+      right: 10%;
+      bottom: 23px;
+      position: absolute;
+  }
+  
+.inputs{
+  
+    padding: 12px 15px 12px 15px !important;
+    box-sizing: border-box;
+    align-items: initial;
+    align-items: center;
+    width: max-content;
+    animation: fadeInAnimation ease 4s; 
+    animation-iteration-count: 1; 
+    opacity: 0.6;
+} 
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+  }
+
+  ul{
+    display: contents;
+  }
+
+  /* .c{
+    animation:yourAnimation 1s forwards 0s linear;
+  }
+
+.d{
+  animation:yourAnimation 1s forwards 0.7s linear;
+}
+
+.e{
+  animation:yourAnimation 1s forwards 1s linear;
+} */
+
+@keyframes yourAnimation{
+  0%{
+      transform: rotate(0deg) translateX(-250px) translateY(-30px) skewX(10deg);
+      }
+  33%{
+      transform: rotate(0deg) translateX(0px);
+      }
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+::placeholder {
+    color: #000 !important;
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: #000 !important
+}
+
+::-ms-input-placeholder {
+    color: #000 !important
+}
+
+.form-control-label {
+    font-size: 12px;
+}
+
+.msg-info {
+    padding-left: 15px;
+    margin-bottom: 30px;
+    padding: 5px;
+    margin: 13px;
+}
+
+.btn-color {
+    border-radius: 50px;
+    color: #fff;
+    background-image: linear-gradient(to right, rgb(253, 241, 201), rgb(189, 182, 255));
+    cursor: pointer;
+    border: none !important;
+    margin-top: 40px
+}
+
+.btn-color:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, rgb(244, 203, 252), #FFD54F)
+}
+
+.a{
+  opacity: 1;
+}

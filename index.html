@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@1,300&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+/>
+</head>
+<body onload="document.body.style.opacity='1'">
+  <div class="container">
+  <div class="row">
+      <div class="parallelogram "></div>
+  <div class="col-lg-6 column">
+    <img src="./assets/screen.png" alt="screen image" class="animate__animated animate__zoomIn">
+    <p class="left animate__animated animate__bounceInUp animate__bounceIn">Let's create<br> something amazing.<br> <img src="./assets/icons8-urgent-message-64.png" alt=""></p>
+  </div>
+
+  <div class=" col-lg-6 column two">
+    <div class="header"><img src="./assets/logo-white.png" alt="logo"> 
+      <p class="alert alert-secondary" role="alert">Already a member? <a onClick="location.href='login.html' " class="btn btn-danger">Login</a></p>
+    </div>
+    <form action="" class="col-lg-11">
+      <h3>Sign in to ShareOn</h3>
+      <button type="button" class="btn btn-danger animate__animated animate__flipInX" formaction="login.html">SIGN IN</button>
+      <p class="msg-info">or sign up using your email adress</p>
+      <div class="inputs">
+        <div class="form-group">
+          <input type="text" id="name" name="email" placeholder="Name" class="form-control inputs animate__animated a">
+        </div>
+        <div class="form-group">
+          <input type="password" id="Username" name="psw" placeholder="Username" class="form-control inputs animate__slideInUp b">
+        </div>
+        <div class="form-group">
+          <input type="text" id="email" name="email" placeholder="Email" class="form-control inputs animate__slideInUp">
+        </div>
+        <div class="form-group">
+          <input type="password" id="psw" name="psw" placeholder="Password" class="form-control inputs animate__slideInUp">
+        </div>
+        <div class="form-group">
+          <input type="date" id="date" name="date" placeholder="Birthday" class="form-control inputs animate__slideInUp ">
+        </div>
+      </div>
+      <ul>
+        <li> &#x29BE By Creating an acount means you're okey with out <a href="Msg/Terms"> Terms Of Service</a>,<a href="Msg/PrivecyPolicy">Privecy Policy</a> , and our <a href="Msg\.NotificationSettings.html">default Notification settings</a>.</li>
+      </ul>
+      <br>
+      <button type="button" class="btn btn-primary animate__animated animate__bounceIn ">SIGN UP</button>
+      <br>
+      <p class="animate__animated animate__zoomIn"> &#x29BE copy rights Lili</p>
+    </form>
+  </div>
+
+  <!-- Container div -->
+</div>
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+</body>
+</html>
